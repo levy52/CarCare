@@ -17,12 +17,12 @@
 </head>
 
 <body>
+    <div class="hero-img">
+        <div class="hero-shadow"></div>
+    </div>
 
-    <header>
-        <div class="hero-img">
-            <div class="hero-shadow"></div>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-5 sticky-top">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-5">
             <div class="container text-white">
                 <a class="navbar-brand" href="#"><i class="fa-solid fa-car-on"></i>Car<span>Care</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -35,7 +35,7 @@
                         <a class="nav-link active me-5" aria-current="page" href="#">Home</a>
                         <a class="nav-link me-5" href="#aboutus">O firmie</a>
                         <a class="nav-link me-5" href="#pricelist">Cennik</a>
-                        <a class="nav-link" href="#">Kontakt</a>
+                        <a class="nav-link" href="#contact">Kontakt</a>
                     </div>
                 </div>
             </div>
@@ -45,10 +45,12 @@
     <main>
         <section id="aboutus" class="aboutus py-5">
             <div class="container">
-                <h1 class="text-center text-lg-start">O firmie</h1>
-                <div class="row">
-                    <div class="col-lg-4 overflow-hidden p-0">
-                        <div class="aboutus-image">
+                <p class="display-3 text-center pb-5">O firmie</p>
+                <div class="row pb-xl-5">
+                    <div class="col-lg-4">
+                        <div class="aboutus-img">
+                            <div class="aboutus-image">
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-8 pt-3 pt-lg-0 px-5 px-md-0 px-lg-5">
@@ -67,77 +69,117 @@
                     </div>
                 </div>
                 <div class="carousel py-5">
-                    <div class="carousel-item">
-                        <picture>
-                            <source srcset="./img/aboutus/cleaning-g3e18186fd_1920.jpg" media="(min-width: 1400px)" />
-                            <img src="./img/aboutus/cleaning-gfe575fd45_640.jpg" alt="MDN" />
-                        </picture>
-                    </div>
-                    <div class="carousel-item">
-                        <picture>
-                            <source srcset="./img/aboutus/alloy-wheel-gbded160b4_1920.jpg"
-                                media="(min-width: 1400px)" />
-                            <img src="./img/aboutus/alloy-wheel-g3059ac301_640.jpg" alt="MDN" />
-                        </picture>
-                    </div>
-                    <div class="carousel-item">
-                        <picture>
-                            <source srcset="./img/aboutus/ford-g2cf41e12f_1920.jpg" media="(min-width: 1400px)" />
-                            <img src="./img/aboutus/ford-gd3ed0f83b_640.jpg" alt="MDN" />
-                        </picture>
-                    </div>
-                    <div class="carousel-item">
-                        <picture>
-                            <source srcset="./img/aboutus/wash-gd258d145b_1920.jpg" media="(min-width: 1400px)" />
-                            <img src="./img/aboutus/wash-g30f5dd615_640.jpg" alt="MDN" />
-                        </picture>
-                    </div>
+                    <picture>
+                        <source srcset="./img/aboutus/cleaning-g3e18186fd_1920.jpg" media="(min-width: 1400px)" />
+                        <img src="./img/aboutus/cleaning-gfe575fd45_640.jpg" alt="MDN" />
+                    </picture>
+                    <picture>
+                        <source srcset="./img/aboutus/alloy-wheel-gbded160b4_1920.jpg" media="(min-width: 1400px)" />
+                        <img src="./img/aboutus/alloy-wheel-g3059ac301_640.jpg" alt="MDN" />
+                    </picture>
+
+                    <picture>
+                        <source srcset="./img/aboutus/ford-g2cf41e12f_1920.jpg" media="(min-width: 1400px)" />
+                        <img src="./img/aboutus/ford-gd3ed0f83b_640.jpg" alt="MDN" />
+                    </picture>
+
+                    <picture>
+                        <source srcset="./img/aboutus/wash-gd258d145b_1920.jpg" media="(min-width: 1400px)" />
+                        <img src="./img/aboutus/wash-g30f5dd615_640.jpg" alt="MDN" />
+                    </picture>
                 </div>
             </div>
         </section>
         <section id="pricelist" class="pricelist py-5">
             <div class="container pb-5">
-                <h2 class="pb-5 text-center text-lg-start">Cennik</h2>
-                <div class="row row-cols-1 row-cols-md-3 g-5 d-flex justify-content-center">
-                    <div class="col-10 col-xl-3 other">
-                        <div class="card h-100">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Usługa 1</h5>
-                                <p class="card-text">Lorem, ipsum dolor.</p>
-                                <hr>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                                    obcaecati recusandae id
-                                    ipsam dicta aliquid.</p>
-                                <p><i class="fa-solid fa-cube"></i></p>
-                                <button type="button" class="btn btn-secondary">Wybieram</button>
-                            </div>
+                <p class="display-3 pb-5 text-center">Cennik</p>
+                <div class="card-group">
+                    <div class="card h-100 other-prices">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Usługa 1</h5>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <hr>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                                obcaecati recusandae id
+                                ipsam dicta aliquid.</p>
+                            <p><i class="fa-solid fa-cube"></i></p>
+                            <button type="button" class="btn btn-secondary">Wybieram</button>
                         </div>
                     </div>
-                    <div class="col-10 col-xl-3 default">
-                        <div class="card h-100">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Usługa 2</h5>
-                                <p class="card-text">Lorem, ipsum dolor.</p>
-                                <hr>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                                    obcaecati recusandae id
-                                    ipsam dicta aliquid.</p>
-                                <p><i class="fa-solid fa-hand-holding-dollar"></i></p>
-                                <button type="button" class="btn btn-primary">Wybieram</button>
-                            </div>
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Usługa 2</h5>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <hr>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                                obcaecati recusandae id
+                                ipsam dicta aliquid.</p>
+                            <p><i class="fa-solid fa-hand-holding-dollar"></i></p>
+                            <button type="button" class="btn btn-primary">Wybieram</button>
                         </div>
                     </div>
-                    <div class="col-10 col-xl-3 other">
-                        <div class="card h-100">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Usługa 3</h5>
-                                <p class="card-text">Lorem, ipsum dolor.</p>
-                                <hr>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                                    obcaecati recusandae id
-                                    ipsam dicta aliquid.</p>
-                                <p><i class="fa-solid fa-diagram-project"></i></p>
-                                <button type="button" class="btn btn-secondary">Wybieram</button>
+                    <div class="card h-100 other-prices">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Usługa 3</h5>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <hr>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                                obcaecati recusandae id
+                                ipsam dicta aliquid.</p>
+                            <p><i class="fa-solid fa-diagram-project"></i></p>
+                            <button type="button" class="btn btn-secondary">Wybieram</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container py-5">
+                <p class="display-3 pb-5 text-center">Kontakt</p>
+                <div class="row justify-content-md-evenly">
+                    <div class="col-md-3 contact-address">
+                        <p class="contact-title m-0 py-4">Adres</p>
+                        <p class="additional-info m-0">ul. Krakowska 1</p>
+                        <p class="additional-info m-0 pb-5">00-000 Kraków</p>
+                        <p class="additional-info m-0">+48 000 000 000</p>
+                        <p class="additional-info m-0 pb-4">mail@mail.com</p>
+                    </div>
+                    <div class="col-md-8 contact-form py-5">
+                        <div class="row justify-content-center">
+                            <div class="col-md-5">
+                                <label class="form-label">Imię i nazwisko</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Wpisz swoje imię i nazwisko">
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <label class="form-label">Adres e-mail</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Podaj swój adres e-mail">
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <label class="form-label">Wybierz temat</label>
+                                <div class="input-group mb-3">
+                                    <select class="form-select" id="inputGroupSelect01">
+                                        <option selected>W jakiej sprawie się kontaktujesz?</option>
+                                        <option value="1">Współpraca</option>
+                                        <option value="2">Informacje</option>
+                                        <option value="3">Ogólne zapytanie</option>
+                                    </select>
+                                </div>
+                                <label class="form-label">Treść wiadomości</label>
+                                <div class="input-group">
+                                    <textarea class="form-control" rows="6"></textarea>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" id="flexRadioDefault" checked>
+                                    <label class="form-check-label" for="flexRadioDefault">
+                                        Wyrażam zgodę na przetwarzanie danych
+                                    </label>
+                                </div>
+                                <button type="button" class="btn btn-outline-primary">Wyślij</button>
                             </div>
                         </div>
                     </div>
@@ -146,16 +188,15 @@
         </section>
     </main>
 
-
     <footer class="bg-dark py-5 text-white text-center">
-        <p>&copy; 2022 CarCare by <a href="https://github.com/levy52">levy52</a></p>
+        <p>&copy; 2022 CarCare by <a href="https://github.com/levy52" target="_blank">levy52</a></p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/slick.js"></script>
 </body>

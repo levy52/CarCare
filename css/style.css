@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-padding-top: 82px;
 }
 
 body {
@@ -36,6 +37,11 @@ a {
   z-index: 0;
 }
 
+.display-3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 nav {
   font-size: 1.8rem;
   text-transform: uppercase;
@@ -58,10 +64,8 @@ footer {
   font-size: 1.6rem;
 }
 
-.aboutus h1 {
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  font-weight: bold;
+.aboutus-img {
+  overflow: hidden;
 }
 .aboutus-image {
   width: 100%;
@@ -69,7 +73,6 @@ footer {
   background-image: url("../img/aboutus/porsche-gb93bdcecc_640.jpg");
   background-size: cover;
   background-position: center;
-  overflow: hidden;
   transition: transform 0.3s;
 }
 .aboutus-image:hover {
@@ -88,18 +91,34 @@ footer {
   padding: 5px 20px;
 }
 
-.carousel-item {
+.carousel img {
   width: 100%;
-  height: 500px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carousel .fa-solid {
+  position: absolute;
+  top: 50%;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  padding: 0.5em;
+  z-index: 1;
+  transform: translateY(-50%);
+  transition: transform 0.3s, color 0.3s;
+}
+.carousel .fa-solid:hover {
+  transform: translateY(-50%) scale(1.7);
+  color: #0334d6;
+}
+.carousel .fa-caret-right {
+  right: 0;
 }
 
 .pricelist {
+  overflow: hidden;
   background-color: #ddd;
-}
-.pricelist h2 {
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  font-weight: bold;
 }
 .pricelist .card-title {
   font-size: 2.2rem;
@@ -116,17 +135,45 @@ footer {
   text-transform: uppercase;
   font-weight: bold;
 }
-.pricelist .default {
-  transform: scale(1.2);
+.pricelist .other-prices {
+  transform: scale(0.9);
 }
 .pricelist i {
   font-size: 3rem;
   padding: 0.5em 0;
 }
 
+.contact-address, .contact-form {
+  border: 1px solid rgb(54, 54, 54);
+}
+.contact-address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.contact .additional-info {
+  font-size: 1.6rem;
+}
+.contact-form,
+.contact input,
+.contact select,
+.contact textarea,
+.contact .btn {
+  font-size: 1.6rem;
+}
+
 @media (min-width: 1200px) {
   .hero-img {
     height: 400px;
     background-image: url("../img/hero-big.jpg");
+  }
+  .carousel img {
+    height: 500px;
   }
 }/*# sourceMappingURL=style.css.map */
