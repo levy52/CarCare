@@ -42,19 +42,20 @@ a {
   font-weight: bold;
 }
 
+.navbar-brand {
+  font-size: 2.2rem;
+}
+.navbar-brand i {
+  padding: 10px;
+}
+.navbar-brand span {
+  font-weight: bold;
+  color: #0334d6;
+}
+
 nav {
   font-size: 1.8rem;
   text-transform: uppercase;
-}
-nav .navbar-brand {
-  font-size: 2.2rem;
-}
-nav .navbar-brand i {
-  padding: 10px;
-}
-nav .navbar-brand span {
-  font-weight: bold;
-  color: #0334d6;
 }
 nav .navbar-toggler {
   padding: 10px;

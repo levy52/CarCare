@@ -16,31 +16,30 @@
     <script src="https://kit.fontawesome.com/86d25a3040.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <div class="hero-img">
-        <div class="hero-shadow"></div>
-    </div>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <header>
+        <div class="hero-img">
+            <div class="hero-shadow"></div>
+        </div>
+    </header>
 
-    <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-5">
-            <div class="container text-white">
-                <a class="navbar-brand" href="#"><i class="fa-solid fa-car-on"></i>Car<span>Care</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active me-5" aria-current="page" href="#">Home</a>
-                        <a class="nav-link me-5" href="#aboutus">O firmie</a>
-                        <a class="nav-link me-5" href="#pricelist">Cennik</a>
-                        <a class="nav-link" href="#contact">Kontakt</a>
-                    </div>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark py-5 sticky-top">
+        <div class="container text-white">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-car-on"></i>Car<span>Care</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active me-5" aria-current="page" href="#">Home</a>
+                    <a class="nav-link me-5" href="#aboutus">O firmie</a>
+                    <a class="nav-link me-5" href="#pricelist">Cennik</a>
+                    <a class="nav-link" href="#contact">Kontakt</a>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <main>
         <section id="aboutus" class="aboutus py-5">
@@ -139,6 +138,7 @@
                 <p class="display-3 pb-5 text-center">Kontakt</p>
                 <div class="row justify-content-md-evenly">
                     <div class="col-md-3 contact-address">
+                        <a class="navbar-brand pt-3 pt-md-0" href="#"><i class="fa-solid fa-car-on"></i>Car<span>Care</span></a>
                         <p class="contact-title m-0 py-4">Adres</p>
                         <p class="additional-info m-0">ul. Krakowska 1</p>
                         <p class="additional-info m-0 pb-5">00-000 Kraków</p>
@@ -163,7 +163,7 @@
                                 <label class="form-label">Wybierz temat</label>
                                 <div class="input-group mb-3">
                                     <select class="form-select" id="inputGroupSelect01">
-                                        <option selected>W jakiej sprawie się kontaktujesz?</option>
+                                        <option selected disabled>W jakiej sprawie się kontaktujesz?</option>
                                         <option value="1">Współpraca</option>
                                         <option value="2">Informacje</option>
                                         <option value="3">Ogólne zapytanie</option>
@@ -173,13 +173,13 @@
                                 <div class="input-group">
                                     <textarea class="form-control" rows="6"></textarea>
                                 </div>
-                                <div class="form-check">
+                                <div class="form-check mt-2">
                                     <input class="form-check-input" type="radio" id="flexRadioDefault" checked>
                                     <label class="form-check-label" for="flexRadioDefault">
                                         Wyrażam zgodę na przetwarzanie danych
                                     </label>
                                 </div>
-                                <button type="button" class="btn btn-outline-primary">Wyślij</button>
+                                <button type="button" class="btn btn-outline-primary mt-2">Wyślij</button>
                             </div>
                         </div>
                     </div>
