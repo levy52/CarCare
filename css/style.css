@@ -169,6 +169,43 @@ footer {
   font-size: 1.6rem;
 }
 
+@media (max-width: 991px) {
+  #navbarNavAltMarkup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  #navbarNavAltMarkup.show-nav {
+    height: 100%;
+  }
+  #navbarNavAltMarkup .closebtn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 10px;
+    font-size: 4rem;
+    color: #818181;
+    display: block;
+    transition: transform 0.3s;
+  }
+  #navbarNavAltMarkup .closebtn:hover {
+    transform: scale(1.2);
+  }
+  .navbar-toggler,
+.navbar-toggler:focus {
+    border: none;
+  }
+}
 @media (min-width: 1200px) {
   .hero-img {
     height: 400px;
