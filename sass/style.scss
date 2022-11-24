@@ -93,6 +93,10 @@ footer {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
+		p {
+			width: 60%;
+		}
 	}
 
 	a {

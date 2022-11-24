@@ -87,6 +87,9 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+.aboutus-contact p {
+  width: 60%;
+}
 .aboutus a {
   font-size: 1.6rem;
   padding: 5px 20px;
